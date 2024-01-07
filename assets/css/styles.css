@@ -12,6 +12,7 @@
 }
 
 body {
+  position: relative;
   font-size: 1rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -22,12 +23,15 @@ body {
 
 /*  LAYOUT GENERAL */
 .header-l {
-  /* position: absolute; 
+  position: sticky;
+  top: 0;
+  left: 0;
   padding-top: 40px;
   padding-bottom: 40px;
   z-index: 100;
-  width: 100%;*/
-  position: relative;
+  width: 100%;
+
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -184,6 +188,7 @@ hr {
 /*  SECTION PRESENTRATION  */
 .section__presentation {
 }
+
 .presentation__text {
   max-width: 1100px;
   margin: 0 auto;
@@ -191,23 +196,28 @@ hr {
   font-size: 1.1rem;
   line-height: 1.6;
 }
-a {
+
+.presentation__text span a {
   text-decoration: none;
+  color: var(--text-color-body);
 }
 
-p > a {
+.text--underline {
   background-image: linear-gradient(
     120deg,
     #fff 0,
-    var(--accent-color-lighter) 20%,
-    var(--accent-color-lighter) 80%,
+    var(--accent-color-lighter) 10%,
+    var(--accent-color-lighter) 90%,
     #fff 100%
   );
   background-repeat: no-repeat;
-  background-size: 100% 0.4em;
-  background-position: 0 90%;
+  background-size: 100% 0.5em;
+  background-position: 0 88%;
+  transition: background-size 0.2s ease-in-out;
 }
-
+.text--underline:hover {
+  background-size: 100% 88%;
+}
 /*  SECTION PRESENTRATION  */
 
 /* SECTION COMPETENCES*/
@@ -257,6 +267,7 @@ p > a {
   grid-gap: 60px 40px;
   justify-items: center;
   align-items: center;
+  z-index: 10;
 }
 .project {
   display: inline-block;
@@ -408,7 +419,7 @@ p > a {
 /*
 /*
 /*  RESPONSIVE  */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .header-l {
     justify-content: center;
     padding: 30px 0 20px;
@@ -523,4 +534,4 @@ p > a {
     left: -21px;
   }
 }
-/*  RESPONSIVE  */
+/*  FIN du RESPONSIVE  */

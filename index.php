@@ -48,22 +48,25 @@
   </header>
 
   <main class="main-l">
-    <div class="section__content section__info">
+
+    <section class="section__content section__info">
       <a href="mailto:alexandre-foulc@orange.fr?Subject=Contact depuis AlexCréationWeb.fr" target="_blank" class="info__btn">M'envoyer un e-mail</a>
       <a href="/assets/img/CV-FoulcAlex-v3.pdf" target="_blank" class="info__btn">Voir mon
         CV</a>
-    </div>
+    </section>
+
 
     <section class="section-l" id="about">
       <h2 class="section__title">Présentation</h2>
       <div class="section__content section__presentation">
         <p class="presentation__text">
-          J'ai d'abord découvert l'Informatique dans les années 80 avec un Thomson TO7 avant de créer mon premier site Web au début des années 2000 avec le célèbre logiciel DreamWeaver. </br>Plus tard, avec l'arrivée de WordPress et la nécessité d'être présent sur Internet pour développer mon activité de Moniteur sportif, je me suis de nouveau intéressé aux nouvelles technologies du Web.</br>J'ai alors ressenti un besoin de me former pour mieux comprendre et ainsi acquérir de nouvelles compétences.
+          J'ai d'abord découvert l'Informatique dans les années 80 avec un Thomson TO7 avant de créer un premier site Web au début des années 2000 avec le célèbre logiciel DreamWeaver. </br>Plus tard, avec l'arrivée de WordPress et la nécessité d'être présent sur Internet pour développer mon activité de Moniteur sportif, je me suis de nouveau intéressé aux nouvelles technologies du Web.</br>J'ai alors ressenti un besoin de me former pour mieux comprendre et ainsi acquérir de nouvelles compétences.
         </p>
         <p class="presentation__text">Curieux et rigoureux, je me suis découvert un réel intérêt pour la programmation et le Webdesign. Je continue à évoluer au gré des challenges.</p>
-        <p class="presentation__text">Aujourd'hui, je mets le même enthousiasme à réaliser un nouveau projet informatique qu'à guider mes clients au
-          travers d'<a href="//sportsnatureevasion.com" target="_blank">activités de pleine
-            nature.</a>
+        <p class="presentation__text">Aujourd'hui, je mets le même enthousiasme à réaliser un nouveau projet informatique qu'à guider mes clients à
+          travers des<span class="text--underline">
+            <a href="//sportsnatureevasion.com" target="_blank">activités de pleine nature.</a>
+          </span>
         </p>
       </div>
     </section>
@@ -215,26 +218,30 @@
       <h2 class="section__title">Parcours</h2>
       <div class="section__content section__path">
         <div class="step step--left">
-          <p class="step__title">STUDI / Digital School - 2023</p>
-          <p class="step__description">Dîplomé d'un titre professionnel de Développeur Web / Web Mobile</p>
+          <p class="step__title">STUDI / Digital School - Nov. 2023 - Déc. 2024</p>
+          <p class="step__description">Préparation du T.P. de Concepteur Développeur d'Applications PHP/Symfony par Alternance (Agence Séquane)</p>
         </div>
         <div class="step step--right">
+          <p class="step__title">STUDI / Digital School - Oct. 2022 - Juin 2023</p>
+          <p class="step__description">Obtention du T.P. de Développeur Web / Web Mobile (niveau 5)</p>
+        </div>
+        <div class="step step--left">
           <p class="step__title">WP Chef - 2021</p>
           <p class="step__description">Certification RS 5170 : Concevoir des sites WordPress professionnels</p>
         </div>
-        <div class="step step--left">
+        <div class="step step--right">
           <p class="step__title">École Française de Papeterie et des Industries
             Graphiques de Grenoble</p>
           <p class="step__description">Obtention du diplôme d’Ingénieur en 09/2000</p>
         </div>
-        <div class="step step--right">
+        <div class="step step--left">
           <p class="step__title">Classes Préparatoires (Physique-Technologie) 1994 - 1997</p>
           <p class="step__description">Lycée Vaucanson - Grenoble</p>
         </div>
-        <div class="step step--left">
+        <!-- <div class="step step--left">
           <p class="step__title">Baccalauréat C (Mathématiques - Physique) - 1994</p>
           <p class="step__description">Lycée Champollion - Grenoble</p>
-        </div>
+        </div> -->
       </div>
     </section>
 
