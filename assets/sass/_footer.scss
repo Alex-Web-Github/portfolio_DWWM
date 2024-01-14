@@ -1,0 +1,23 @@
+/*  FOOTER  */
+.footer-l {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background: var(--theme-color-dark);
+
+  p.footer__text {
+    font-size: 0.8rem;
+    color: var(--text-white-secondary);
+  }
+}
+
+// Responsive
+@media (max-width: 576px) {
+  .footer-l {
+    height: 100px;
+    p {
+      padding-bottom: 50px;
+    }
+  }
+}

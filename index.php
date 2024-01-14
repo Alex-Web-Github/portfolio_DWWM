@@ -4,12 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-
   <title>AlexCréationWeb - Développeur Web</title>
-  <link rel="stylesheet" href="/assets/css/reset.css">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <!-- <link rel="stylesheet" href="/assets/css/print.css" media="print"> -->
-
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Réseaux sociaux -->
   <meta name="description" content="Création de sites / application web entre Besançon et Pontarlier dans le Doubs et le Jura - Développeur WordPress">
   <meta property="og:title" content="AlexCréationWeb - Développeur Web">
   <meta property="og:description" content="Création de sites et application web">
@@ -39,6 +36,7 @@
       <p class="logo__title">Alexandre Foulc</p>
       <p class="logo__subtitle">Développeur Web / Mobile<span class="underscore flash">_</span></p>
     </div>
+
     <nav class="navigation">
       <a class="navigation__link active" href="#about">Présentation</a>
       <a class="navigation__link" href="#skills">Compétences</a>
@@ -48,29 +46,28 @@
   </header>
 
   <main class="main-l">
-
-    <section class="section__content section__info">
+    <section class="section__content section__btn">
       <a href="mailto:alexandre-foulc@orange.fr?Subject=Contact depuis AlexCréationWeb.fr" target="_blank" class="info__btn">M'envoyer un e-mail</a>
-      <a href="/assets/img/CV-FoulcAlex-v3.pdf" target="_blank" class="info__btn">Voir mon
+      <a target="" class="info__btn disabled" role="link" aria-disabled="true" title="CV disponible sur demande">Voir mon
         CV</a>
     </section>
 
-
     <section class="section-l" id="about">
       <h2 class="section__title">Présentation</h2>
-      <div class="section__content section__presentation">
+      <div class="section__content">
         <p class="presentation__text">
           J'ai d'abord découvert l'Informatique dans les années 80 avec un Thomson TO7 avant de créer un premier site Web au début des années 2000 avec le célèbre logiciel DreamWeaver. </br>Plus tard, avec l'arrivée de WordPress et la nécessité d'être présent sur Internet pour développer mon activité de Moniteur sportif, je me suis de nouveau intéressé aux nouvelles technologies du Web.</br>J'ai alors ressenti un besoin de me former pour mieux comprendre et ainsi acquérir de nouvelles compétences.
         </p>
-        <p class="presentation__text">Curieux et rigoureux, je me suis découvert un réel intérêt pour la programmation et le Webdesign. Je continue à évoluer au gré des challenges.</p>
+        <p class="presentation__text">Curieux et rigoureux, je me suis découvert un réel intérêt pour la programmation et le webdesign. Aujourd'hui, je continue à évoluer au gré des challenges.</p>
         <p class="presentation__text">Aujourd'hui, je mets le même enthousiasme à réaliser un nouveau projet informatique qu'à guider mes clients à
           travers des<span class="text--underline">
-            <a href="//sportsnatureevasion.com" target="_blank">activités de pleine nature.</a>
+            <a href="https://sportsnatureevasion.com" target="_blank">activités de pleine nature.</a>
           </span>
         </p>
       </div>
     </section>
     <hr>
+
     <section class="section-l" id="skills">
       <h2 class="section__title">Compétences</h2>
       <div class="section__content section__skills">
@@ -79,7 +76,6 @@
             <img src="/assets/img/ui-design.png" class="skill__icon" alt="icon Front-End">
             <h3 class="skill__title">Front-End</h3>
           </div>
-
           <ul class="skill__list">
             <li class="skill__list__item">Maquetter une application</li>
             <li class="skill__list__item">Réaliser un site statique et Responsive</li>
@@ -121,6 +117,7 @@
       <!-- Icones des Compétences -->
     </section>
     <hr>
+
     <section class="section-l" id="portofolio">
       <h2 class="section__title">Réalisations</h2>
       <div class="section__content section__project">
@@ -214,6 +211,7 @@
       </div>
     </section>
     <hr>
+
     <section class="section-l" id="path">
       <h2 class="section__title">Parcours</h2>
       <div class="section__content section__path">
@@ -238,13 +236,8 @@
           <p class="step__title">Classes Préparatoires (Physique-Technologie) 1994 - 1997</p>
           <p class="step__description">Lycée Vaucanson - Grenoble</p>
         </div>
-        <!-- <div class="step step--left">
-          <p class="step__title">Baccalauréat C (Mathématiques - Physique) - 1994</p>
-          <p class="step__description">Lycée Champollion - Grenoble</p>
-        </div> -->
       </div>
     </section>
-
 
   </main>
 
@@ -254,7 +247,7 @@
     </p>
   </footer>
 
-  <script src="/assets/js/global.js"></script>
+  <script src="assets/js/global.js"></script>
 </body>
 
 </html>

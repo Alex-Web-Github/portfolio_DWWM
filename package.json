@@ -4,8 +4,11 @@
   "description": "Présentation de différents projets",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch assets/sass/styles.scss:assets/css/styles.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.7"
+  }
 }
