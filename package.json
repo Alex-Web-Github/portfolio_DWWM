@@ -4,11 +4,17 @@
   "description": "Présentation de différents projets",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch assets/sass/styles.scss:assets/css/styles.css"
+    "sass": "sass --watch assets/sass/styles.scss:assets/css/styles.css",
+    "minify": "postcss assets/css/styles.css > styles-minified.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.69.7"
+  },
+  "devDependencies": {
+    "cssnano": "^6.0.3",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0"
   }
 }

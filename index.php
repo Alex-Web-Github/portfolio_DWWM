@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>AlexCréationWeb - Développeur Web</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="styles-minified.css">
   <!-- Réseaux sociaux -->
   <meta name="description" content="Création de sites / application web entre Besançon et Pontarlier dans le Doubs et le Jura - Développeur WordPress">
   <meta property="og:title" content="AlexCréationWeb - Développeur Web">
   <meta property="og:description" content="Création de sites et application web">
-  <meta property="og:image" content="/assets/img/image_og_300-157.png">
+  <meta property="og:image" content="/img/image_og_300-157.png">
   <meta property="og:image:alt" content="">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:type" content="website">
@@ -32,7 +32,7 @@
 <body>
   <header class="header-l">
     <div class="logo">
-      <img src="/assets/img/IMG_alex-mini.jpeg" alt="portrait alex" class="logo__img">
+      <img src="/img/IMG_alex-mini.jpeg" alt="portrait alex" class="logo__img">
       <p class="logo__title">Alexandre Foulc</p>
       <p class="logo__subtitle">Développeur Web / Mobile<span class="underscore flash">_</span></p>
     </div>
@@ -73,7 +73,7 @@
       <div class="section__content section__skills">
         <div class="skill__block">
           <div class="block__title">
-            <img src="/assets/img/ui-design.png" class="skill__icon" alt="icon Front-End">
+            <img src="/img/ui-design.png" class="skill__icon" alt="icon Front-End">
             <h3 class="skill__title">Front-End</h3>
           </div>
           <ul class="skill__list">
@@ -85,7 +85,7 @@
         </div>
         <div class="skill__block">
           <div class="block__title">
-            <img src="/assets/img/back-end.png" class="skill__icon" alt="icon Back-End">
+            <img src="/img/back-end.png" class="skill__icon" alt="icon Back-End">
             <h3 class="skill__title">Back-End</h3>
           </div>
 
@@ -99,18 +99,18 @@
       </div>
       <!-- Icones des Compétences -->
       <div class="section__content__icons">
-        <img src="/assets/img/icons/html5-original.svg" class="icons" alt="icon html">
-        <img src="/assets/img/icons/css3-original.svg" class="icons" alt="icon css">
-        <img src="/assets/img/icons/javascript-original.svg" class="icons" alt="icon javascript">
-        <img src="/assets/img/icons/bootstrap-original.svg" class="icons" alt="icon bootstrap">
-        <img src="/assets/img/icons/php-original.svg" class="icons" alt="icon php">
-        <img src="/assets/img/icons/mysql-original-wordmark.svg" class="icons" alt="icon mysql">
-        <img src="/assets/img/icons/symfony-original-wordmark.svg" class="icons" alt="icon symfony">
-        <img src="/assets/img/icons/wordpress-original.svg" class="icons" alt="icon wordpress">
-        <img src="/assets/img/icons/figma-original.svg" class="icons" alt="icon figma">
-        <img src="/assets/img/icons/vscode-original-wordmark.svg" class="icons" alt="icon vscode">
-        <img src="/assets/img/icons/git-original-wordmark.svg" class="icons" alt="icon git">
-        <img src="/assets/img/icons/github-original.svg" class="icons" alt="icon github">
+        <img src="/img/icons/html5-original.svg" class="icons" alt="icon html">
+        <img src="/img/icons/css3-original.svg" class="icons" alt="icon css">
+        <img src="/img/icons/javascript-original.svg" class="icons" alt="icon javascript">
+        <img src="/img/icons/bootstrap-original.svg" class="icons" alt="icon bootstrap">
+        <img src="/img/icons/php-original.svg" class="icons" alt="icon php">
+        <img src="/img/icons/mysql-original-wordmark.svg" class="icons" alt="icon mysql">
+        <img src="/img/icons/symfony-original-wordmark.svg" class="icons" alt="icon symfony">
+        <img src="/img/icons/wordpress-original.svg" class="icons" alt="icon wordpress">
+        <img src="/img/icons/figma-original.svg" class="icons" alt="icon figma">
+        <img src="/img/icons/vscode-original-wordmark.svg" class="icons" alt="icon vscode">
+        <img src="/img/icons/git-original-wordmark.svg" class="icons" alt="icon git">
+        <img src="/img/icons/github-original.svg" class="icons" alt="icon github">
 
 
       </div>
@@ -122,7 +122,7 @@
       <h2 class="section__title">Réalisations</h2>
       <div class="section__content section__project">
         <div class="project">
-          <div class="project__cover" style="background-image: url(/assets/img/thumbnail-CDS25-mini.jpeg); "></div>
+          <div class="project__cover" style="background-image: url(/img/thumbnail-CDS25-mini.jpeg); "></div>
           <div class="project__content">
             <span class="project__badge">WordPress</span>
             <p class="project__title">C.D.S. 25</p>
@@ -133,7 +133,7 @@
         </div>
 
         <div class="project">
-          <div class="project__cover" style="background-image: url(/assets/img/thumbnail-dgsoudure-mini-1.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-dgsoudure-mini-1.jpeg); ">
           </div>
           <div class="project__content">
             <span class="project__badge">WordPress</span>
@@ -145,7 +145,7 @@
         </div>
 
         <div class="project">
-          <div class="project__cover" style="background-image: url(/assets/img/thumbnail-quaiantique-mini.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-quaiantique-mini.jpeg); ">
           </div>
           <div class="project__content">
             <span class="project__badge">PHP-MySQL</span>
@@ -157,7 +157,7 @@
           </div>
         </div>
         <div class="project">
-          <div class="project__cover" style="background-image: url(/assets/img/thumbnail-charles-cantin-mini.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-charles-cantin-mini.jpeg); ">
           </div>
           <div class="project__content">
             <span class="project__badge">WordPress</span>
@@ -170,7 +170,7 @@
         </div>
 
         <div class="project">
-          <div class="project__cover" style="background-image: url(/assets/img/thumbnail-rolldice-mini.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-rolldice-mini.jpeg); ">
           </div>
           <div class="project__content">
             <span class="project__badge">HTML / CSS / JS</span>
@@ -183,7 +183,7 @@
         </div>
 
         <div class="project">
-          <div class="project__cover" style="background-image: url(/assets/img/thumbnail-sportsnatureevasion-mini.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-sportsnatureevasion-mini.jpeg); ">
           </div>
           <div class="project__content">
             <span class="project__badge">WordPress</span>
@@ -196,13 +196,13 @@
         </div>
 
         <div class="project">
-          <div class="project__cover" style="background-image: url(/assets/img/thumbnail-clipboard-mini.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-clipboard-mini.jpeg); ">
           </div>
           <div class="project__content">
             <span class="project__badge">Webdesign</span>
             <p class="project__title">ClipBoard</p>
             <p class="project__description">Maquette sous Figma d'une application web fictive (desktop/mobile)</p>
-            <div class="project__footer"><a href="/assets/img/Clipboard-Design_compressed.pdf" target="_blank">Voir
+            <div class="project__footer"><a href="/img/Clipboard-Design_compressed.pdf" target="_blank">Voir
                 le projet</a>
             </div>
           </div>
