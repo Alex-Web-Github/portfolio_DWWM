@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>AlexCréationWeb - Développeur Web</title>
-  <link rel="stylesheet" href="styles-minified.css">
+  <link rel="stylesheet" href="styles.css">
   <!-- Réseaux sociaux -->
   <meta name="description" content="Création de sites / application web entre Besançon et Pontarlier dans le Doubs et le Jura - Développeur WordPress">
   <meta property="og:title" content="AlexCréationWeb - Développeur Web">
@@ -247,7 +247,7 @@
     </p>
   </footer>
 
-  <script src="assets/js/global.js"></script>
+  <script src="/js/global.js"></script>
 </body>
 
 </html>
