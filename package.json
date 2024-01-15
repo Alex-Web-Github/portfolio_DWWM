@@ -4,8 +4,10 @@
   "description": "Présentation de différents projets",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch assets/sass/styles.scss:assets/css/styles.css",
-    "minify": "postcss assets/css/styles.css > styles-minified.css"
+    "watch": "sass --watch assets/sass/styles.scss:assets/css/styles.css",
+    "sass": "sass assets/sass/styles.scss:assets/css/styles.css",
+    "minify": "postcss assets/css/styles.css > styles.css",
+    "build": "npm run sass && npm run minify"
   },
   "author": "",
   "license": "ISC",

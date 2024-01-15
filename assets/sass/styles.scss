@@ -208,7 +208,7 @@ hr {
       }
       span.project__badge {
         position: absolute;
-        background: #f39c12;
+        background: var(--theme-color);
         border-radius: 5px;
         color: white;
         top: -10px;
