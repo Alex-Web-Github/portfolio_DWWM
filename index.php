@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://alexcreationweb.fr">
   <link rel="canonical" href="https://alexcreationweb.fr/">
 
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <!-- <link rel="icon" href="/favicon.ico" sizes="32x32"> -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <!-- ICON APPLE EN 192x192 -->
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">

@@ -4,9 +4,9 @@
   "description": "Présentation de différents projets",
   "main": "index.js",
   "scripts": {
-    "watch": "sass --watch assets/sass/styles.scss:assets/css/styles.css",
-    "sass": "sass assets/sass/styles.scss:assets/css/styles.css",
-    "minify": "postcss assets/css/styles.css > styles.css",
+    "sass": "sass css/scss/styles.scss:css/styles.css",
+    "watch": "sass --watch css/scss/styles.scss:css/styles.css",
+    "minify": "postcss css/styles.css > styles.css",
     "build": "npm run sass && npm run minify"
   },
   "author": "",
