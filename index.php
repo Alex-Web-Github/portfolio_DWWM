@@ -232,10 +232,6 @@
             Graphiques de Grenoble</p>
           <p class="step__description">Obtention du diplôme d’Ingénieur en 09/2000</p>
         </div>
-        <div class="step step--left">
-          <p class="step__title">Classes Préparatoires (Physique-Technologie) 1994 - 1997</p>
-          <p class="step__description">Lycée Vaucanson - Grenoble</p>
-        </div>
       </div>
     </section>
 
