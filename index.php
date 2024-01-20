@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>AlexCréationWeb - Développeur Web</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-mini.css">
   <!-- Réseaux sociaux -->
   <meta name="description" content="Création de sites / application web entre Besançon et Pontarlier dans le Doubs et le Jura - Développeur WordPress">
   <meta property="og:title" content="AlexCréationWeb - Développeur Web">
@@ -18,7 +18,6 @@
   <meta name="twitter:card" content="summary">
   <meta property="og:url" content="https://alexcreationweb.fr">
   <link rel="canonical" href="https://alexcreationweb.fr/">
-
   <!-- <link rel="icon" href="/favicon.ico" sizes="32x32"> -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <!-- ICON APPLE EN 192x192 -->
@@ -30,19 +29,20 @@
 </head>
 
 <body>
-  <header class="header-l">
-    <div class="logo">
-      <img src="/img/IMG_alex-mini.jpeg" alt="portrait alex" class="logo__img">
-      <p class="logo__title">Alexandre Foulc</p>
-      <p class="logo__subtitle">Développeur Web / Mobile<span class="underscore flash">_</span></p>
+  <header>
+    <div class="header-l global-container">
+      <div class="logo">
+        <img src="/img/IMG_alex-mini.jpeg" alt="portrait Alexandre Foulc" class="logo__img">
+        <p class="logo__title">Alexandre Foulc</p>
+        <p class="logo__subtitle">Développeur Web / Mobile<span class="underscore flash">_</span></p>
+      </div>
+      <nav class="navigation">
+        <a class="navigation__link active" href="#about">Présentation</a>
+        <a class="navigation__link" href="#skills">Compétences</a>
+        <a class="navigation__link" href="#portofolio">Réalisations</a>
+        <a class="navigation__link" href="#path">Parcours</a>
+      </nav>
     </div>
-
-    <nav class="navigation">
-      <a class="navigation__link active" href="#about">Présentation</a>
-      <a class="navigation__link" href="#skills">Compétences</a>
-      <a class="navigation__link" href="#portofolio">Réalisations</a>
-      <a class="navigation__link" href="#path">Parcours</a>
-    </nav>
   </header>
 
   <main class="main-l">
@@ -122,7 +122,7 @@
       <h2 class="section__title">Réalisations</h2>
       <div class="section__content section__project">
         <div class="project">
-          <div class="project__cover" style="background-image: url(/img/thumbnail-CDS25-mini.jpeg); "></div>
+          <div class="project__cover" style="background-image: url(/img/thumbnail-CDS25-mini.webp); "></div>
           <div class="project__content">
             <span class="project__badge">WordPress</span>
             <p class="project__title">C.D.S. 25</p>
@@ -133,7 +133,7 @@
         </div>
 
         <div class="project">
-          <div class="project__cover" style="background-image: url(/img/thumbnail-dgsoudure-mini-1.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-dgsoudure-mini-1.webp); ">
           </div>
           <div class="project__content">
             <span class="project__badge">WordPress</span>
@@ -145,7 +145,7 @@
         </div>
 
         <div class="project">
-          <div class="project__cover" style="background-image: url(/img/thumbnail-quaiantique-mini.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-quaiantique-mini.webp); ">
           </div>
           <div class="project__content">
             <span class="project__badge">PHP-MySQL</span>
@@ -157,7 +157,7 @@
           </div>
         </div>
         <div class="project">
-          <div class="project__cover" style="background-image: url(/img/thumbnail-charles-cantin-mini.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-charles-cantin-mini.webp); ">
           </div>
           <div class="project__content">
             <span class="project__badge">WordPress</span>
@@ -170,7 +170,7 @@
         </div>
 
         <div class="project">
-          <div class="project__cover" style="background-image: url(/img/thumbnail-rolldice-mini.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-rolldice-mini.webp); ">
           </div>
           <div class="project__content">
             <span class="project__badge">HTML / CSS / JS</span>
@@ -183,7 +183,7 @@
         </div>
 
         <div class="project">
-          <div class="project__cover" style="background-image: url(/img/thumbnail-sportsnatureevasion-mini.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-sportsnatureevasion-mini.webp); ">
           </div>
           <div class="project__content">
             <span class="project__badge">WordPress</span>
@@ -196,7 +196,7 @@
         </div>
 
         <div class="project">
-          <div class="project__cover" style="background-image: url(/img/thumbnail-clipboard-mini.jpeg); ">
+          <div class="project__cover" style="background-image: url(/img/thumbnail-clipboard-mini.webp); ">
           </div>
           <div class="project__content">
             <span class="project__badge">Webdesign</span>
@@ -237,13 +237,15 @@
 
   </main>
 
-  <footer class="footer-l">
-    <p class="footer__text">AlexCréationWeb | 2022 -
-      <?= date("Y"); ?>
-    </p>
+  <footer>
+    <div class="footer-l global-container">
+      <p class="footer__text">AlexCréationWeb | 2022 -
+        <?= date("Y"); ?>
+      </p>
+    </div>
   </footer>
 
-  <script src="/js/global.js"></script>
+  <!-- <script src="/js/global.js"></script> -->
 </body>
 
 </html>
