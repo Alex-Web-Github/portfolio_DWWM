@@ -11,6 +11,8 @@
   --badge-bg-color: #bf7602;
 }
 
+/*  LAYOUT GENERAL */
+
 body {
   position: relative;
   font-size: 1rem;
@@ -29,3 +31,36 @@ body {
   color: var(--text-color-body);
   background-color: var(--main-bg-color);
 }
+
+.global-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.main-l {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-l {
+  padding: 40px 40px;
+}
+.section__title {
+  position: absolute;
+  transform: rotate(-0.01turn);
+  display: inline-block;
+  padding: 5px 20px;
+  font-family: monospace;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: var(--text-white);
+  background: var(--theme-color);
+}
+.section__content {
+  position: relative;
+  margin-top: 60px;
+  padding: 60px 10px 40px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+/*  LAYOUT  */
