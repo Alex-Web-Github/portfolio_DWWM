@@ -121,6 +121,7 @@ body {
 .main-l {
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 
 .section-l {
@@ -156,12 +157,6 @@ header {
 }
 
 .header-l {
-  position: sticky;
-  top: 0;
-  left: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -223,7 +218,7 @@ header {
   color: #fff;
   padding: 0 10px;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 .header-l .navigation a.navigation__link.active {
   color: var(--accent-color-lighter);
@@ -233,6 +228,40 @@ header {
   transition: color 0.3s ease-in-out;
 }
 
+/*  SECTION BUTTONS  */
+.section__btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 60px;
+  padding: 40px 0;
+}
+.section__btn a.info__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--accent-color);
+  color: var(--text-color-body);
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 300ms ease-in-out 0ms;
+}
+.section__btn a.info__btn.disabled {
+  color: rgba(18, 26, 43, 0.3058823529);
+  cursor: not-allowed;
+}
+.section__btn a.info__btn:hover {
+  background-color: var(--theme-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/*  FIN SECTION BUTTONS  */
 /*
 /*  RESPONSIVE HEADER
 */
@@ -265,6 +294,10 @@ header {
   .header-l .logo p.logo__subtitle {
     font-size: 0.9rem;
   }
+  .section__btn {
+    margin-top: 20px;
+    padding: 20px 0;
+  }
 }
 /*  FOOTER  */
 footer {
@@ -275,73 +308,146 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50px;
+  padding: 20px 0;
 }
 .footer-l p.footer__text {
   font-size: 0.8rem;
   color: var(--text-white-secondary);
 }
 
-@media (max-width: 576px) {
-  .footer-l {
-    height: 100px;
-  }
-  .footer-l p {
-    padding-bottom: 50px;
-  }
+/* SECTION COMPETENCES*/
+#skills .section__skills {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
-/*  SECTION BUTTONS  */
-.section__btn {
+#skills .section__skills .skill__block div.block__title {
   display: flex;
   justify-content: center;
-  margin: 0 auto 40px;
-  padding: 40px 0;
+  align-items: center;
 }
-.section__btn a.info__btn {
-  cursor: pointer;
-  padding: 10px 25px;
-  background-color: var(--accent-color);
-  color: var(--text-color-body);
-  border: 0;
-  border-radius: 5px;
-  margin: 20px;
-  text-decoration: none;
-  transition: 300ms ease-in-out 0ms;
+#skills .section__skills .skill__block div.block__title img.title__icon {
+  width: 50px;
 }
-.section__btn a.info__btn.disabled {
-  color: rgba(18, 26, 43, 0.3058823529);
+#skills .section__skills .skill__block div.block__title h3.skill__title {
+  padding: 0 20px;
 }
-.section__btn a.info__btn.disabled::after {
-  content: "";
+#skills .section__skills .skill__block ul.skill__list {
+  padding-left: 20px;
+  margin: 30px 0;
 }
-.section__btn a.info__btn.disabled:hover {
-  background-color: var(--accent-color);
+#skills .section__skills .skill__block ul.skill__list li.skill__list__item {
+  padding: 5px 0;
+  font-size: 1.1rem;
 }
-.section__btn a.info__btn::after {
-  font-size: 1rem;
-  line-height: 1.5;
-  content: ">";
-  opacity: 0;
-  position: absolute;
-  margin-left: -1rem;
-  transition: all 0.3s ease-in-out 0ms;
+#skills .section__skills .skill__block .block__icons {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  justify-items: center;
+  align-items: center;
 }
-.section__btn a.info__btn:hover {
-  background-color: var(--accent-color-lighter);
-}
-.section__btn a.info__btn:hover:hover::after {
-  opacity: 1;
-  will-change: margin-left;
-  margin-left: 5px;
+#skills .section__skills .skill__block .block__icons .icons {
+  width: 55px;
+  margin: 10px;
 }
 
-/*  SECTION BUTTONS  */
-/*  SECTION PRESENTRATION  */
+/* FIN SECTION COMPETENCES*/
+/*  SECTION REALISATIONS  */
+#projects .section__project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 60px 40px;
+  justify-items: center;
+  align-items: center;
+  z-index: 10;
+}
+#projects .section__project div.project {
+  display: inline-block;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  background: black;
+  z-index: 100;
+}
+#projects .section__project div.project div.project__cover {
+  width: 100%;
+  height: 105px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  opacity: 0.9;
+}
+#projects .section__project div.project div.project__content {
+  position: relative;
+  padding: 20px;
+  background: white;
+  min-height: 160px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+}
+#projects .section__project div.project div.project__content p.project__title {
+  margin: 0;
+  margin-bottom: 5px;
+  color: var(--theme-color);
+  font-weight: bold;
+  font-size: 16px;
+}
+#projects .section__project div.project div.project__content p.project__description {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+#projects .section__project div.project div.project__content span.project__badge {
+  position: absolute;
+  background: var(--theme-color);
+  border-radius: 5px;
+  color: white;
+  top: -10px;
+  left: 20px;
+  font-size: 13px;
+  height: 20px;
+  padding: 0px 20px;
+  line-height: 20px;
+}
+#projects .section__project div.project div.project__content div.project__footer {
+  position: absolute;
+  text-align: right;
+  bottom: 10px;
+  right: 10px;
+}
+#projects .section__project div.project div.project__content div.project__footer a {
+  display: inline-block;
+  background: #3498db;
+  background: var(--theme-color);
+  background: var(--accent-color);
+  color: white;
+  color: var(--text-color-body);
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+#projects .section__project div.project div.project__content div.project__footer a:hover {
+  transition: background-color 0.2s ease-in-out;
+  background-color: var(--accent-color-lighter);
+}
+
+/*  FIN SECTION REALISATIONS  */
+/*  SECTION PRESENTATION  */
 #about p.presentation__text {
   max-width: 900px;
   margin: 0 auto;
   padding-bottom: 10px;
-  font-size: 1.2rem;
   line-height: 1.8;
 }
 #about p.presentation__text span.text--underline {
@@ -360,138 +466,7 @@ footer {
   background-size: 100% 88%;
 }
 
-/*  SECTION PRESENTRATION  */
-/* SECTION COMPETENCES*/
-#skills .section__skills {
-  display: flex;
-  justify-content: space-around;
-}
-#skills .section__skills .skill__block {
-  padding: 30px;
-}
-#skills .section__skills .skill__block div.block__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#skills .section__skills .skill__block div.block__title img.skill__icon {
-  width: 50px;
-}
-#skills .section__skills .skill__block div.block__title h3.skill__title {
-  padding: 0 20px;
-}
-#skills .section__skills .skill__block ul.skill__list {
-  padding-left: 20px;
-  margin: 30px 0;
-}
-#skills .section__skills .skill__block ul.skill__list li.skill__list__item {
-  padding: 5px 0;
-  font-size: 1.1rem;
-}
-
-#skills .section__content__icons {
-  padding: 40px 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  justify-items: center;
-  align-items: center;
-}
-#skills .section__content__icons img.icons {
-  width: 55px;
-  margin: 10px;
-}
-
-/* SECTION COMPETENCES*/
-/*  SECTION REALISATION / PORTOFOLIO  */
-#portofolio .section__project {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: 60px 40px;
-  justify-items: center;
-  align-items: center;
-  z-index: 10;
-}
-#portofolio .section__project div.project {
-  display: inline-block;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 340px;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  background: black;
-  z-index: 100;
-}
-#portofolio .section__project div.project div.project__cover {
-  width: 100%;
-  height: 105px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-  opacity: 0.9;
-}
-#portofolio .section__project div.project div.project__content {
-  position: relative;
-  padding: 20px;
-  background: white;
-  min-height: 160px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-sizing: border-box;
-  padding-bottom: 40px;
-}
-#portofolio .section__project div.project div.project__content p.project__title {
-  margin: 0;
-  margin-bottom: 5px;
-  color: var(--theme-color);
-  font-weight: bold;
-  font-size: 16px;
-}
-#portofolio .section__project div.project div.project__content p.project__description {
-  margin: 0;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.7);
-}
-#portofolio .section__project div.project div.project__content span.project__badge {
-  position: absolute;
-  background: var(--theme-color);
-  border-radius: 5px;
-  color: white;
-  top: -10px;
-  left: 20px;
-  font-size: 13px;
-  height: 20px;
-  padding: 0px 20px;
-  line-height: 20px;
-}
-#portofolio .section__project div.project div.project__content div.project__footer {
-  position: absolute;
-  text-align: right;
-  bottom: 10px;
-  right: 10px;
-}
-#portofolio .section__project div.project div.project__content div.project__footer a {
-  display: inline-block;
-  background: #3498db;
-  background: var(--theme-color);
-  background: var(--accent-color);
-  color: white;
-  color: var(--text-color-body);
-  font-size: 12px;
-  border-radius: 5px;
-  text-decoration: none;
-  padding: 5px 10px;
-  font-weight: bold;
-}
-#portofolio .section__project div.project div.project__content div.project__footer a:hover {
-  transition: background-color 0.2s ease-in-out;
-  background-color: var(--accent-color-lighter);
-}
-
-/*  SECTION REALISATION  */
+/*  FIN SECTION PRESENTATION  */
 /*  SECTION PARCOURS  */
 #path .section__path {
   display: flex;
@@ -547,14 +522,19 @@ footer {
   left: -25px;
 }
 
-/*  SECTION PARCOURS  */
-/*
-/*  RESPONSIVE  
-*/
-/*  LAYOUT < 1200px  */
-@media (max-width: 1200px) {
-  #skills .skill__block {
+/*  FIN SECTION PARCOURS  */
+/**********************************************/
+/*************  RESPONSIVE  
+***********************************************/
+/*  LAYOUT < 1024px  */
+@media (max-width: 1024px) {
+  #skills .section__skills {
+    flex-direction: column;
+  }
+  #skills .section__skills .skill__block {
     padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
   }
   #path .section__path {
     padding-right: 30px;
@@ -575,26 +555,6 @@ footer {
   .section__content {
     padding: 40px 5px;
   }
-  .section__btn {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    justify-content: space-between;
-    padding: 0;
-    z-index: 20;
-    margin: 0;
-    width: 100vw;
-  }
-  .section__btn a.info__btn {
-    padding: 10px 20px;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
-  }
-  #about p.presentation__text {
-    width: calc(100% - 30px);
-    font-size: 1.1rem;
-  }
   #skills .section__skills {
     display: flex;
     flex-direction: column;
@@ -614,15 +574,15 @@ footer {
     margin: 15px 0;
     padding-left: 10px;
   }
-  #skills .section__content__icons {
-    padding: 40px 5px;
-  }
-  #skills .section__content__icons img.icons {
+  #skills .section__skills .skill__block .block__icons .icons {
     width: 40px;
   }
-  #portofolio .section__project {
+  #projects .section__project {
     display: flex;
     flex-direction: column;
+  }
+  #about p.presentation__text {
+    width: calc(100% - 30px);
   }
   #path .section__path .step {
     width: calc(100% - 20px);

@@ -3,6 +3,7 @@
   --theme-color: #162850;
   --theme-color-dark: #0d1830;
   --accent-color: #b4c62e;
+  // --accent-color-darker: #687219;
   --accent-color-lighter: #d8ee2f;
   --text-color-body: #121a2b;
   --text-black: #060c18;
@@ -36,9 +37,11 @@ body {
   max-width: 1920px;
   margin: 0 auto;
 }
+
 .main-l {
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 .section-l {
   padding: 40px 40px;

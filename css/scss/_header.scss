@@ -3,17 +3,18 @@ header {
 }
 
 .header-l {
-  position: sticky;
-  top: 0;
-  left: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  z-index: 100;
+  // position: sticky;
+  // top: 0;
+  // left: 0;
+  // padding-top: 40px;
+  // padding-bottom: 40px;
+  // z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 60px;
   // background-color: var(--theme-color);
+
   /*  LOGO  */
   .logo {
     position: relative;
@@ -62,19 +63,7 @@ header {
         }
       }
     }
-    // @keyframes flash {
-    //   0% {
-    //     opacity: 1;
-    //   }
-    //   40% {
-    //     opacity: 0;
-    //   }
-    //   100% {
-    //     opacity: 1;
-    //   }
-    // }
   }
-
   /*  NAVIGATION  */
   .navigation {
     text-align: center;
@@ -82,7 +71,7 @@ header {
       color: #fff;
       padding: 0 10px;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       &.active {
         color: var(--accent-color-lighter);
       }
@@ -93,6 +82,47 @@ header {
     }
   }
 }
+/*  SECTION BUTTONS  */
+.section__btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 60px;
+  padding: 40px 0;
+
+  a.info__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--accent-color);
+    color: var(--text-color-body);
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    // margin: 20px;
+    text-decoration: none;
+    transition: 300ms ease-in-out 0ms;
+    &.disabled {
+      color: #121a2b4e;
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      background-color: var(--theme-color);
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+      // &:hover::after {
+      //   opacity: 1;
+      //   will-change: margin-left;
+      //   margin-left: 5px;
+      // }
+    }
+  }
+}
+/*  FIN SECTION BUTTONS  */
 
 /*
 /*  RESPONSIVE HEADER
@@ -125,5 +155,9 @@ header {
         font-size: 0.9rem;
       }
     }
+  }
+  .section__btn {
+    margin-top: 20px;
+    padding: 20px 0;
   }
 }
