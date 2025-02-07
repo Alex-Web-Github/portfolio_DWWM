@@ -7,10 +7,8 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  // height: 50px;
-  // background: var(--theme-color-dark);
   padding: 20px 0;
-  p.footer__text {
+  .footer__text {
     font-size: 0.8rem;
     color: var(--text-white-secondary);
   }
@@ -19,6 +17,5 @@ footer {
 // Responsive
 @media (max-width: 576px) {
   .footer-l {
-    // height: 100px;
   }
 }

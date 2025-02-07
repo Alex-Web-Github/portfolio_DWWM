@@ -233,7 +233,7 @@
 /*  LAYOUT < 1024px  */
 @media (max-width: 1024px) {
   #skills .section__skills {
-    flex-direction: column;
+    // flex-direction: column;
     .skill__block {
       padding: 20px;
       max-width: 400px;
@@ -246,7 +246,6 @@
   }
 }
 
-//
 /*  LAYOUT < 576px  */
 @media (max-width: 576px) {
   .main-l {
